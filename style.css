@@ -2,23 +2,23 @@
 
 .container{
       display:grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr   ;
+      grid-template-columns: 1fr 1fr 1fr 1fr   ;
       grid-template-rows:  1fr 1fr 2fr 5% 15% 1fr 1fr 1fr 1fr 1fr 2.5fr;
-      grid-gap: 25cd projepx;
+      grid-gap: 5px;
       grid-template-areas: 
 
       
-      "sidebar-blank1 header header header sidebar-blank2  "
-      "sidebar-blank1 sub-header sub-header sub-header sidebar-blank2 "
-      "sidebar-blank1 sub-header sub-header sub-header sidebar-blank2 "
-      "sidebar-blank1 sub-header sub-header sub-header sidebar-blank2  "
-      "content1 content1 content1 content1 content1  "
-      "sidebar-blank3 blog blog note sidebar-blank4"
-      "sidebar-blank3 blog blog note sidebar-blank4"
-      "sidebar-blank3 blog blog note sidebar-blank4"
-      "sidebar-blank3 blog blog note sidebar-blank4"
-      "sidebar-blank3 blog blog note sidebar-blank4"
-      "footer footer footer footer footer  "  ;
+      "sidebar-blank1 header header sidebar-blank2  "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2 "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2 "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2  "
+      "content1 content1 content1 content1  "
+      "sidebar-blank3 blog note sidebar-blank4"
+      "sidebar-blank3 blog note sidebar-blank4"
+      "sidebar-blank3 blog note sidebar-blank4"
+      "sidebar-blank3 blog note sidebar-blank4"
+      "sidebar-blank3 blog note sidebar-blank4"
+      "footer footer footer footer  "  ;
 }
 
 .sidebar-blank1{
@@ -152,7 +152,7 @@ h3{
 
 .note{
       grid-area:note;
-      width: 230px;
+      
 }
 
 .sidebar-blank4{
