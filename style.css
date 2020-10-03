@@ -1,10 +1,11 @@
 
 
 .container{
+      
       display:grid;
-      grid-template-columns: 1fr 1.25fr 0.6fr 1fr   ;
-      grid-template-rows:  1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.2fr 3fr;
-      grid-gap: 20px;
+      grid-template-columns: .9fr 1.25fr 0.8fr .9fr   ;
+      grid-template-rows:  1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1fr;
+      grid-gap: 45px;
       grid-template-areas: 
 
       
@@ -21,11 +22,92 @@
       "sidebar-blank3 blog note sidebar-blank4"
       "sidebar-blank3 blog note sidebar-blank4"
       "sidebar-blank3 blog note sidebar-blank4"
-      "sidebar-blank3 blog note sidebar-blank4"
-      
-      "footer footer footer footer  "  ;
+       ;
 }
 
+.container2{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr   ;
+      grid-template-rows:  20% 85%;
+      grid-gap: 1;
+      grid-template-areas: 
+
+      "footerheader footerheader footerheader footerheader"
+      "footer4 footer2 footer3 footer5 "
+
+}
+
+.blogpostcontainer{
+      display:grid;
+      grid-template-columns: .9fr 1.25fr 0.8fr .9fr   ;
+      grid-template-rows:  0.5fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      grid-template-areas: 
+
+      "sidebar-blank1 header header sidebar-blank2  "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2 "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2 "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2  "
+}
+
+.continuereadingcontainer{
+      display:grid;
+      grid-template-columns: .9fr 1.25fr 0.8fr .9fr   ;
+      grid-template-rows:  0.5fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      grid-template-areas:
+
+      "sidebar-blank1 header header sidebar-blank2"
+      "sidebar-blank1 blog note sidebar-blank2"
+      "sidebar-blank1 blog note sidebar-blank2"
+      "sidebar-blank1 blog note sidebar-blank2"
+      "sidebar-blank1 blog note sidebar-blank2"
+      "sidebar-blank1 blog note sidebar-blank2"
+}
+
+.learnmorecontainer{
+      display:grid;
+      grid-template-columns: .9fr 0.8fr 1.25fr .9fr   ;
+      grid-template-rows:  0.5fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      grid-template-areas:
+
+      "sidebar-blank1 header header sidebar-blank2"
+      "sidebar-blank1 note blog sidebar-blank2"
+      "sidebar-blank1 note blog sidebar-blank2"
+      "sidebar-blank1 note blog sidebar-blank2"
+      "sidebar-blank1 note blog sidebar-blank2"
+      "sidebar-blank1 note blog sidebar-blank2"
+
+}
+
+
+
+.footerheader {
+      grid-area: footerheader;
+      background-color: #d3d3d3;
+}
+
+.footer3{
+      grid-area : footer3;
+      background-color: #d3d3d3;
+      padding: 20px;
+}
+
+.footer4 {
+      grid-area: footer4;
+      background-color: #d3d3d3;
+}
+
+.footer5{
+      grid-area: footer5;
+      background-color: #d3d3d3;
+
+}
+
+body{
+      margin:0
+}
 .sidebar-blank1{
  grid-area : sidebar-blank1;
 }
@@ -74,7 +156,10 @@ h2{
 }
 h3{
       color: #b65858;
-    
+}
+
+h4{
+      color: #b65858;
 }
 
 #s1{
@@ -103,8 +188,6 @@ h3{
       display: flex;
       justify-content: space;
       justify-content: space-between;
-     
-     
 }
 
 #stext{
@@ -141,6 +224,13 @@ h3{
 
 }
 
+.footer2{
+      grid-area :footer2;
+      background-color: #d3d3d3;
+      padding: 5px;
+
+}
+
 .sidebar-blank3{
        grid-area: sidebar-blank3;
 }
@@ -158,7 +248,7 @@ h3{
 
 .note{
       grid-area:note;
-            width: 200px;
+      width: 300px;
       
 }
 
@@ -176,21 +266,87 @@ h3{
       background-color: rgba(182,88,88,1); 
   }
   
-  #continue-reading:hover {
+#continue-reading:hover {
       background-color: white;
       color: black;
   }
 
-  #thedead{
+#thedead{
       height: 325px;
       width: 575px;     
 }
 
 #foot{
-      color: #737c78
+      color: #737c78;
+      margin:0 
 }
 
-#message{
-      height:100px;
-      width: 333px
+#first:focus {
+      background-color: #d3d3d3 ;
+      
+    }
+
+#last:focus {
+      background-color: #d3d3d3 ;
+      
+    }
+
+
+#firstsecond {
+      display: flex;
+      justify-content: space-between;
 }
+
+#datebox{
+      color: #d3d3d3;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 8px;
+      width: 20px;
+      background-color: #737c78; 
+  }
+
+  #blog-post{
+      color: #2e6e56;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px; 
+  }
+  
+  #blog-post:hover {
+         color:rgba(182,88,88,1); 
+  }
+
+  #hadead{
+      float: left; 
+      height: 125px;
+      width: 125px; 
+      position: relative;
+      float: left; 
+      padding: 0 13px 5px 0
+  }
+
+  #large{
+      height: 125px;
+      width: 125px;  
+      float: left;  
+      padding: 0 13px 5px 0
+      
+  }
+
+  #blog-zone{
+      color: rgba(182,88,88,1); 
+      text-align: center;
+      text-decoration: none;
+      font-size: 30px; 
+  }
+
+  #jumbo{
+      padding: 0;
+      display: block;
+      margin: 0 auto;
+      max-height: 100%;
+      max-width: 100%;
+  }
+ 
