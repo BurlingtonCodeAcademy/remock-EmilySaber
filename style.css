@@ -1,10 +1,8 @@
-
-
 .container{
       
       display:grid;
       grid-template-columns: .9fr 1.25fr 0.8fr .9fr   ;
-      grid-template-rows:  1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1fr;
+      grid-template-rows:  1fr 1fr 1fr 0.7fr 2.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1.5fr;
       grid-gap: 45px;
       grid-template-areas: 
 
@@ -47,13 +45,13 @@
       "sidebar-blank1 header header sidebar-blank2  "
       "sidebar-blank1 sub-header sub-header sidebar-blank2 "
       "sidebar-blank1 sub-header sub-header sidebar-blank2 "
-      "sidebar-blank1 sub-header sub-header sidebar-blank2  "
+      "sidebar-blank1 sub-header sub-header sidebar-blank2 "
 }
 
 .continuereadingcontainer{
       display:grid;
       grid-template-columns: .9fr 1.25fr 0.8fr .9fr   ;
-      grid-template-rows:  0.5fr 1fr 1fr 1fr;
+      grid-template-rows:  0.3fr 1fr 1fr 1.2fr 1fr 3fr;
       grid-gap: 30px;
       grid-template-areas:
 
@@ -68,11 +66,12 @@
 .learnmorecontainer{
       display:grid;
       grid-template-columns: .9fr 0.8fr 1.25fr .9fr   ;
-      grid-template-rows:  0.5fr 1fr 1fr 1fr;
-      grid-gap: 30px;
+      grid-template-rows:  0.5fr 1fr 1fr 1.2fr 2fr 2fr;
+      grid-gap: 20px;
       grid-template-areas:
 
       "sidebar-blank1 header header sidebar-blank2"
+      "sidebar-blank1 note blog sidebar-blank2"
       "sidebar-blank1 note blog sidebar-blank2"
       "sidebar-blank1 note blog sidebar-blank2"
       "sidebar-blank1 note blog sidebar-blank2"
@@ -108,6 +107,7 @@
 body{
       margin:0
 }
+
 .sidebar-blank1{
  grid-area : sidebar-blank1;
 }
@@ -139,20 +139,25 @@ grid-area: sidebar-blank2;
 grid-area: content1;
 display: flex;
 justify-content: center;
+font-family: "Aladin", cursive;
+font-size:40px;
 color: #d3d3d3;
 background: rgb(212,184,184);
 background: linear-gradient(90deg, rgba(212,184,184,1) 0%, rgba(119,49,49,1) 100%);
-
 }
 
 h2{
       color: #b65858;
       margin:5px;
+      font-family: 'Aladin', cursive;
+      font-size: 80px;
 }
 
 #blues{
       margin: 0;
       color: #2e6e56;
+      font-family: 'BenchNine', sans-serif;
+      font-size: 30px;
 }
 h3{
       color: #b65858;
@@ -278,7 +283,16 @@ h4{
 
 #foot{
       color: #737c78;
-      margin:0 
+      margin:0;
+
+}
+
+#first{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#last{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #first:focus {
@@ -335,11 +349,11 @@ h4{
       
   }
 
-  #blog-zone{
+  #blog-zone{ 
       color: rgba(182,88,88,1); 
       text-align: center;
       text-decoration: none;
-      font-size: 30px; 
+      font-size: 10px; 
   }
 
   #jumbo{
@@ -350,3 +364,20 @@ h4{
       max-width: 100%;
   }
  
+  #yellow{
+        color: #e1ad01 
+  }
+
+  #blue{
+        color: #56C8C3;
+  }
+
+  #page{
+        width: 12px;
+        height: 12px
+  }
+
+  #bolt{
+      width: 15px;
+      height: 15px
+}
