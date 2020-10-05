@@ -2,7 +2,7 @@
       
       display:grid;
       grid-template-columns: .9fr 1.25fr 0.8fr .9fr   ;
-      grid-template-rows:  1fr 1fr 1fr 0.7fr 2.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr 1.5fr;
+      grid-template-rows:  1fr 1fr 1fr 0.7fr 2.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-gap: 45px;
       grid-template-areas: 
 
@@ -90,7 +90,7 @@
 .footer3{
       grid-area : footer3;
       background-color: #d3d3d3;
-      padding: 20px;
+      padding: 10px;
 }
 
 .footer4 {
@@ -140,7 +140,7 @@ grid-area: content1;
 display: flex;
 justify-content: center;
 font-family: "Aladin", cursive;
-font-size:40px;
+font-size: 35px;
 color: #d3d3d3;
 background: rgb(212,184,184);
 background: linear-gradient(90deg, rgba(212,184,184,1) 0%, rgba(119,49,49,1) 100%);
